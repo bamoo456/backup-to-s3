@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backup-to-s3"
+version = "0.1.0"
+description = ""
+authors = ["George Chen"]
+
+[tool.poetry.scripts]
+backup_to_s3 = "backup_to_s3.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+boto3 = "^1.16.57"
+botocore = "^1.19.57"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+rope = "^0.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
